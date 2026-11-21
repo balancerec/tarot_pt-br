@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import { readFile } from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
 import { catalogErrors } from './catalog-validation.mjs';
 
 const file = new URL('../data/cards.pt-BR.json', import.meta.url);
