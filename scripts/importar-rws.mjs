@@ -47,5 +47,5 @@ for (const name of [...expected]) {
   manifest.push({file:name,width,height,size:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex'),source:url});
   console.log('OK',name,width+'x'+height);
 }
-await writeFile(path.join(OUT, 'manifest.json'), JSON.stringify({source:API,count:manifest.length,cards:manifest},null,2)+'\\n');
+await writeFile(path.join(OUT, 'manifest.json'), JSON.stringify({source:API,count:manifest.length,cards:manifest},null,2)+'\n');
 console.log('Importação concluída: '+manifest.length+' cartas, manifesto SHA-256 gerado.');
