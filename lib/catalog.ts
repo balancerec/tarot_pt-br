@@ -1,6 +1,7 @@
 import rawCards from '@/data/cards.pt-BR.json';
 
 import type { Card, Suit } from '@/domain/tarot';
+export type { Card, Suit } from '@/domain/tarot';
 
 export const cards: readonly Card[] = rawCards as unknown as Card[];
 
