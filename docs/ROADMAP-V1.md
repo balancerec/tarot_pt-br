@@ -1,7 +1,7 @@
 # Tarot PT-BR — Roadmap Executivo e Backlog V1
 
 **Referência principal:** [PLANO-MESTRE-V1.md](PLANO-MESTRE-V1.md)  
-**Status:** proposta, nenhuma etapa futura implementada.
+**Status:** proposta; nenhuma etapa funcional futura implementada. **Acompanhamento de execução:** [CHECKLIST-MESTRE.md](CHECKLIST-MESTRE.md) (fonte única de status), [REGISTRO-DE-PROGRESSO.md](REGISTRO-DE-PROGRESSO.md) e [CHECKLIST-78-CARTAS.md](CHECKLIST-78-CARTAS.md). Não usar esta lista de backlog como status de conclusão; o checklist mestre define o estado.
 
 ## Marco 0 — Base confirmada (concluído pelo usuário)
 
