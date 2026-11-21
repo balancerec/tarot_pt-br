@@ -1,20 +1,8 @@
 import rawCards from '@/data/cards.pt-BR.json';
 
-export type Suit = 'cups' | 'pentacles' | 'swords' | 'wands';
-export type ArcanaType = 'major' | 'minor';
-export interface Card {
-  id: string;
-  slug: string;
-  namePtBr: string;
-  nameEn: string;
-  arcanaType: ArcanaType;
-  suit: Suit | null;
-  rank: number | null;
-  majorNumber: number | null;
-  sourceFile: string;
-}
+import type { Card, Suit } from '@/domain/tarot';
 
-export const cards = rawCards as Card[];
+export const cards: readonly Card[] = rawCards as unknown as Card[];
 
 export const suitLabels: Record<Suit, string> = {
   cups: 'Copas',
