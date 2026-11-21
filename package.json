@@ -1,0 +1,14 @@
+{
+  "name": "tarot-pt-br",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Bootstrap do acervo de tarot PT-BR",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "assets:check": "node scripts/importar-rws.mjs --dry-run",
+    "assets:import": "node scripts/importar-rws.mjs"
+  }
+}
