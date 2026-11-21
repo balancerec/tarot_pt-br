@@ -4,6 +4,18 @@ Aplicativo de tarot em português brasileiro, iniciado com as **78 cartas histó
 
 > Estado: bootstrap do repositório. A interface, a API e o motor de tiragens ainda serão implementados. As imagens originais não estão incorporadas neste commit.
 
+## Planejamento e acompanhamento
+
+O desenvolvimento é acompanhado por checkboxes com IDs estáveis e evidências:
+
+- [Checklist Mestre — 165 tarefas](docs/CHECKLIST-MESTRE.md) (fonte única do andamento).
+- [Checklist individual — 78 cartas brasileiras](docs/CHECKLIST-78-CARTAS.md).
+- [Registro de progresso](docs/REGISTRO-DE-PROGRESSO.md).
+- [Protocolo obrigatório de atualização](docs/PROCESSO-DE-ATUALIZACAO.md).
+- [Plano Mestre de Arquitetura](docs/PLANO-MESTRE-V1.md), [Roadmap](docs/ROADMAP-V1.md) e [Diagramas](docs/DIAGRAMAS-V1.md).
+
+**Regra:** toda entrega concluída deve atualizar checklist, registro cronológico e documentação afetada no mesmo PR. Não marcar tarefas sem evidência. No momento, a arquitetura está em branch de planejamento e o aplicativo ainda não existe.
+
 ## Fonte das cartas
 
 - Acervo: [mixvlad/TarotCards — full-png](https://github.com/mixvlad/TarotCards/tree/main/tarot/rider-waite/full-png)
