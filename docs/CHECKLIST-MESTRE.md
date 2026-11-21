@@ -1,6 +1,6 @@
 # ✅ TAROT PT-BR — CHECKLIST MESTRE DE EXECUÇÃO
 
-**Atualizado:** 2026-11-21 · **Branch:** docs/architecture-master-v1 · **Status:** 14 de 165 tarefas confirmadas; nenhuma versão do app implementada.
+**Atualizado:** 2026-11-21 · **Branch:** docs/architecture-master-v1 · **[PR #2 em revisão](https://github.com/balancerec/tarot_pt-br/pull/2)** · **Status:** 14 de 165 tarefas confirmadas; nenhuma versão do app implementada.
 
 **Documentos:** [Plano Mestre](PLANO-MESTRE-V1.md) · [Roadmap](ROADMAP-V1.md) · [Diagramas](DIAGRAMAS-V1.md) · [Registro de progresso](REGISTRO-DE-PROGRESSO.md) · [Regra de atualização](PROCESSO-DE-ATUALIZACAO.md) · [78 cartas autorais](CHECKLIST-78-CARTAS.md)
 
