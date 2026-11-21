@@ -112,6 +112,6 @@ A carta só recebe **[x]** quando TODAS as etapas do ciclo estiverem concluídas
 
 - Estilo aprovado para a coleção: **Brazilian Cinematic Heritage**, proporção 3:5, moldura de pergaminho envelhecido, arquétipos RWS preservados por adaptação cultural brasileira.
 - Padrão de exportação desejado: 4344 × 7240 px. Upscaling não é equivalente a detalhe nativo.
-- **BR-059 / Oito de Espadas:** houve aprovação de direção visual/esboço em conversa anterior. Isso não comprova entrega de master validado, nem upload ao repositório ou aprovação editorial; permanece desmarcada.
+- **BR-058 / Oito de Espadas:** houve aprovação de direção visual/esboço em conversa anterior. Isso não comprova entrega de master validado, nem upload ao repositório ou aprovação editorial; permanece desmarcada.
 - A regra RWS distingue **VIII A Força** e **XI A Justiça**.
 - Todos os 78 registros começam pendentes. Cada alteração exige evidência de revisão e publicação.
