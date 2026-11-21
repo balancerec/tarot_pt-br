@@ -1,0 +1,34 @@
+name: V0.1 CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - feature/v01-foundation
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      # Lockfile pending: once package-lock.json has been generated and reviewed,
+      # replace npm install with npm ci for fully reproducible builds.
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Validate catalog
+        run: npm run catalog:check
+      - name: Unit tests
+        run: npm run test:unit
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Lint
+        run: npm run lint
+      - name: Build
+        run: npm run build
