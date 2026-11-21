@@ -1,6 +1,6 @@
 # TAROT PT-BR — Plano Mestre de Arquitetura V1.0
 
-**Situação:** PROPOSTA PARA REVISÃO — documentação, sem implementação funcional  
+**Situação:** PROPOSTA PARA REVISÃO — V0.1 parcialmente implementada em feature/v01-foundation, sem merge e sem gate aprovado  
 **Repositório:** https://github.com/balancerec/tarot_pt-br  
 **Baralho histórico de origem:** https://github.com/mixvlad/TarotCards/tree/main/tarot/rider-waite/full-png  
 **Idioma primário:** pt-BR  

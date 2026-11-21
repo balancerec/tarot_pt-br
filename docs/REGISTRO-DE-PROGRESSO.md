@@ -1,10 +1,23 @@
 # Tarot PT-BR — Registro cronológico de progresso
 
-**Última atualização:** 2026-11-21  
+**Última atualização:** 2026-11-21 (fundação V0.1 em execução)  
 **Branch de documentação:** docs/architecture-master-v1 (não mesclada no main)  
 **PR de revisão:** https://github.com/balancerec/tarot_pt-br/pull/2 (rascunho; sem merge)
 
 Este log registra **entregas realmente executadas** e distingue tarefas comprovadas de tarefas planejadas. O estado normativo está em [CHECKLIST-MESTRE.md](CHECKLIST-MESTRE.md). Processos em [PROCESSO-DE-ATUALIZACAO.md](PROCESSO-DE-ATUALIZACAO.md).
+
+## 2026-11-21 — Fundação V0.1 Next.js, catálogo tipado e CI
+
+- **Branch:** feature/v01-foundation (criada a partir de docs/architecture-master-v1; PR #3 em rascunho, sem merge).
+- **Commits representativos:** 17c4f72e245797a4a5e7e964e81bda2ddf8fede2 (app e catálogo), 3b7190855e96db00efee5bd0ae2da8cd7255f3c6 (domínio), 323b1fbd033e9effaf89326499f116b10ecd270a (correção de tipos), 74daca902f56cb53c64c044c2a43eb2c7d346d2a (README).
+- **IDs concluídos nesta entrega:** V01A-01, V01A-07, V01A-08, V01A-09, V01B-01, V01B-02, V01B-03, V01B-04, V01B-05, V01B-06, V01B-07, V01B-09, V01D-01, V01D-11, V01E-01, V01E-08.
+- **Entregas:** aplicação Next.js 16/React 19/TypeScript com Tailwind; catálogo de 78 registros PT-BR e tipo de Card/Deck/CardArtwork; roteamento inicial; home/biblioteca/detalhe/baralhos/créditos; contrato de validação, seis testes unitários Node; CI GitHub Actions.
+- **Evidência de CI:** https://github.com/balancerec/tarot_pt-br/actions/runs/44901593778 — instalação, catálogo, 6 testes unitários, typecheck, lint e build concluídos com sucesso. Build estático gerou 84 páginas (incluindo as 78 cartas).
+- **PR:** https://github.com/balancerec/tarot_pt-br/pull/3 — rascunho para revisão, base docs/architecture-master-v1.
+- **Falha encontrada e corrigida:** a separação de tipos para domain/tarot.ts causou falha TS2459/TS2724 em CI; a reexportação dos tipos no catálogo corrigiu a integração, verificada no CI acima.
+- **Pendente / sem marcação:** package-lock.json, formatter, Vitest/Testing Library, Playwright, teste no Windows, renderização visual real no navegador, thumbnails, CDN, preview público, zoom acessível completo e gate V0.1.
+- **Advertência:** as imagens masters continuam locais e ignoradas pelo Git. O CI validou build de páginas, **não** confirmou imagens presentes no deploy.
+- **Próximos IDs:** V01A-03, V01A-04, V01A-05, V01A-06, V01A-10, V01C-01… e V01D-12.
 
 ## 2026-11-21 — Bootstrap do repositório
 

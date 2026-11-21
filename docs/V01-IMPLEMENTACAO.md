@@ -15,7 +15,7 @@
 
 ## Dependências/limitações ainda abertas
 
-1. **NÃO foi possível instalar pacotes Next.js neste ambiente de execução** por ausência de acesso ao registry npm. Logo, o build, lint, typecheck e os fluxos browser não estão comprovados.
+1. Neste ambiente local isolado não há acesso ao registry npm, mas o GitHub Actions **instalou dependências, validou 78 cartas, executou 6 testes, typecheck, lint e build com sucesso**: https://github.com/balancerec/tarot_pt-br/actions/runs/44901593778. A execução no Windows e os fluxos reais no navegador continuam pendentes.
 2. O arquivo package-lock.json ainda não existe. Deve ser gerado com \`npm.cmd install\` no ambiente Windows com acesso ao registry e validado no CI; depois trocar \`npm install\` por \`npm ci\`.
 3. O catálogo usa PNG masters locais diretamente. **É apenas uma integração inicial:** ainda falta a pipeline thumb/catalog/detail para velocidade e deploy.
 4. Os masters estão ignorados pelo Git: um deploy que só possua o checkout do repo não exibirá as imagens até existir pipeline de asset/CDN.
@@ -42,6 +42,17 @@ Abra http://localhost:3000.
 Se os masters importados já estiverem em public/decks/rider-waite/originals, eles continuarão no disco ao trocar de branch, pois são ignorados. Caso não estejam, execute \`npm.cmd run assets:import\`.
 
 Depois de instalar, commitar o package-lock.json na branch de feature para builds determinísticos. A partir daí, o pipeline pode ser migrado de npm install para npm ci.
+
+## Validação comprovada em CI (2026-11-21)
+
+- Instalação em Ubuntu via `npm install`: aprovada.
+- Catálogo RWS completo: aprovado.
+- 6 testes unitários Node: aprovados.
+- Typecheck: aprovado.
+- ESLint: aprovado.
+- Build Next.js: aprovado (84 páginas estáticas, incluindo 78 rotas de cartas).
+- Testes no Windows/Playwright, imagens no deploy, screenshots e lockfile: **pendentes**.
+- Antes de corrigir exportações de tipos do domínio, duas execuções de CI falharam; a correção foi validada pelo CI aprovado no link acima.
 
 ## Gate de validação
 
