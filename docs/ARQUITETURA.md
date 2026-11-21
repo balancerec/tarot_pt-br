@@ -2,10 +2,16 @@
 
 Este documento é o índice da documentação de arquitetura. Os detalhes foram expandidos para arquivos específicos, na branch de planejamento.
 
+**Progresso oficial e checkboxes:** [CHECKLIST-MESTRE.md](CHECKLIST-MESTRE.md) · **histórico:** [REGISTRO-DE-PROGRESSO.md](REGISTRO-DE-PROGRESSO.md).
+
 1. [Plano Mestre V1.0](PLANO-MESTRE-V1.md) — produto, módulos, modelo de dados, stack, segurança, imagens, testes e implantação.
 2. [Roadmap V1.0](ROADMAP-V1.md) — fases, entregáveis, gates de qualidade e backlog.
 3. [Diagramas V1.0](DIAGRAMAS-V1.md) — arquitetura, entidades, mídia e fluxo editorial.
-4. [Fontes e créditos](FONTES-E-CREDITOS.md) — procedência histórica e orientações de atribuição.
+4. [Checklist Mestre](CHECKLIST-MESTRE.md) — 165 tarefas identificadas; atualização obrigatória a cada avanço.
+5. [Checklist das 78 cartas brasileiras](CHECKLIST-78-CARTAS.md) — uma tarefa por arcano.
+6. [Registro de progresso](REGISTRO-DE-PROGRESSO.md) — logs e evidências do que foi entregue.
+7. [Protocolo de atualização](PROCESSO-DE-ATUALIZACAO.md) — regra de conclusão e atualização documental.
+8. [Fontes e créditos](FONTES-E-CREDITOS.md) — procedência histórica e orientações de atribuição.
 
 ## Estado confirmado
 
