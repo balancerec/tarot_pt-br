@@ -1,7 +1,8 @@
 # Tarot PT-BR — Registro cronológico de progresso
 
 **Última atualização:** 2026-11-21  
-**Branch de documentação:** docs/architecture-master-v1 (não mesclada no main)
+**Branch de documentação:** docs/architecture-master-v1 (não mesclada no main)  
+**PR de revisão:** https://github.com/balancerec/tarot_pt-br/pull/2 (rascunho; sem merge)
 
 Este log registra **entregas realmente executadas** e distingue tarefas comprovadas de tarefas planejadas. O estado normativo está em [CHECKLIST-MESTRE.md](CHECKLIST-MESTRE.md). Processos em [PROCESSO-DE-ATUALIZACAO.md](PROCESSO-DE-ATUALIZACAO.md).
 
@@ -42,7 +43,7 @@ Este log registra **entregas realmente executadas** e distingue tarefas comprova
 - **Commits conhecidos:** 91cb7f842eac2fca556f37c4821e91052dbad5d9 (checklist mestre); 7b588c10b7826181ae38bcd5cebf9de17c4d9080 (lista de cartas e correção do ID do Oito de Espadas).
 - **IDs confirmados:** GOV-01, GOV-02, GOV-03, GOV-04.
 - **Entregas:** checklist mestre de 165 itens identificados; inventário separado de 78 cartas autorais; protocolo de atualização; registro cronológico; instruções ao Codex e template de PR.
-- **Evidência:** links relativos de documentação e histórico de commits na branch.
+- **Evidência:** links relativos de documentação, histórico de commits e https://github.com/balancerec/tarot_pt-br/pull/2 (rascunho).
 - **Limites:** GOV-05 (aprovação de arquitetura) e GOV-06 (revisão e merge) não concluídos; arte brasileira ainda não publicada; V0.1 não implementada.
 - **Próximo:** revisão de arquitetura e implementação da fundação Next.js V01A-01 a V01A-10 em branch específica.
 
