@@ -2,6 +2,8 @@
 
 Este documento é o índice da documentação de arquitetura. Os detalhes foram expandidos para arquivos específicos, na branch de planejamento.
 
+**Implementação V0.1:** [V01-IMPLEMENTACAO.md](V01-IMPLEMENTACAO.md) · **PR de rascunho:** https://github.com/balancerec/tarot_pt-br/pull/3.
+
 **Progresso oficial e checkboxes:** [CHECKLIST-MESTRE.md](CHECKLIST-MESTRE.md) · **histórico:** [REGISTRO-DE-PROGRESSO.md](REGISTRO-DE-PROGRESSO.md).
 
 1. [Plano Mestre V1.0](PLANO-MESTRE-V1.md) — produto, módulos, modelo de dados, stack, segurança, imagens, testes e implantação.
@@ -18,7 +20,8 @@ Este documento é o índice da documentação de arquitetura. Os detalhes foram 
 - Importador existente, validado no terminal do usuário com 78 PNGs (22 maiores e 56 menores).
 - Arquivos importados localmente com 1086 x 1810 pixels.
 - Manifesto SHA-256 gerado localmente.
-- Nenhum app Next.js, sistema de tiragens, API ou banco de dados implementado no repositório nesta fase.
+- O aplicativo Next.js V0.1 foi codificado na branch feature/v01-foundation e aprovado em CI (catálogo, 6 testes unitários, tipos, lint e build), mas ainda não passou por validação visual ou testes no Windows.
+- Sistema de tiragens, API e banco de dados ainda não implementados.
 - Os PNGs mestres não são enviados ao Git e não estarão disponíveis automaticamente no ambiente de deploy.
 
 ## Decisão inicial

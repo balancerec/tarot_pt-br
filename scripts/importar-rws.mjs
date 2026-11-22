@@ -4,7 +4,7 @@
  * Node.js >=20; sem dependências externas.
  * Uso: node scripts/importar-rws.mjs [--dry-run]
  */
-import { mkdir, writeFile, readFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

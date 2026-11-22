@@ -1,6 +1,6 @@
 # ✅ TAROT PT-BR — CHECKLIST MESTRE DE EXECUÇÃO
 
-**Atualizado:** 2026-11-21 · **Branch:** docs/architecture-master-v1 · **[PR #2 em revisão](https://github.com/balancerec/tarot_pt-br/pull/2)** · **Status:** 14 de 165 tarefas confirmadas; nenhuma versão do app implementada.
+**Atualizado:** 2026-11-21 · **Branch atual:** feature/v01-foundation · **[PR #3 da V0.1](https://github.com/balancerec/tarot_pt-br/pull/3)** · **Base:** docs/architecture-master-v1 ([PR #2](https://github.com/balancerec/tarot_pt-br/pull/2)) · **Status:** 30 de 165 tarefas confirmadas; V0.1 em implementação, sem gate aprovado.
 
 **Documentos:** [Plano Mestre](PLANO-MESTRE-V1.md) · [Roadmap](ROADMAP-V1.md) · [Diagramas](DIAGRAMAS-V1.md) · [Registro de progresso](REGISTRO-DE-PROGRESSO.md) · [Regra de atualização](PROCESSO-DE-ATUALIZACAO.md) · [78 cartas autorais](CHECKLIST-78-CARTAS.md)
 
@@ -21,11 +21,11 @@
 |---|---:|---:|---|
 | M00 — Repositório e acervo histórico | 10 | 14 | Parcial |
 | GOV — Gestão e rastreabilidade | 4 | 10 | Parcial |
-| V0.1-A — Fundação Next.js | 0 | 10 | Pendente |
-| V0.1-B — Modelo de dados e catálogo | 0 | 9 | Pendente |
+| V0.1-A — Fundação Next.js | 4 | 10 | Parcial |
+| V0.1-B — Modelo de dados e catálogo | 8 | 9 | Parcial |
 | V0.1-C — Imagens e manifesto de publicação | 0 | 9 | Pendente |
-| V0.1-D — Interface da biblioteca | 0 | 12 | Pendente |
-| V0.1-E — Qualidade e publicação MVP | 0 | 10 | Pendente |
+| V0.1-D — Interface da biblioteca | 2 | 12 | Parcial |
+| V0.1-E — Qualidade e publicação MVP | 2 | 10 | Parcial |
 | V0.2-A — Dicionário e conteúdo editorial | 0 | 9 | Pendente |
 | V0.2-B — Motor de tiragens | 0 | 14 | Pendente |
 | V0.3-A — Diário local e academia | 0 | 7 | Pendente |
@@ -35,7 +35,7 @@
 | V1.0 — Lançamento consolidado | 0 | 10 | Pendente |
 | Q — Controles transversais | 0 | 10 | Pendente |
 
-**Total:** 14/165 checkboxes marcados (não inclui as 78 artes individuais nem os modelos de execução).
+**Total:** 30/165 checkboxes marcados (não inclui as 78 artes individuais nem os modelos de execução).
 
 ---
 
@@ -71,28 +71,28 @@
 
 ## V0.1-A — Fundação Next.js
 
-- [ ] **V01A-01** Implantar Next.js App Router, React e TypeScript preservando importador existente.
+- [x] **V01A-01** Implantar Next.js App Router, React e TypeScript preservando importador existente.
 - [ ] **V01A-02** Integrar Tailwind CSS e tokens semânticos para temas.
 - [ ] **V01A-03** Fixar versões compatíveis de Node/dependências e gerar lockfile.
 - [ ] **V01A-04** Configurar ESLint, formatter, TypeScript strict e scripts npm.
 - [ ] **V01A-05** Instalar Vitest e Testing Library para testes.
 - [ ] **V01A-06** Configurar Playwright para testes E2E.
-- [ ] **V01A-07** Criar estrutura modular app/components/features/domain/data/lib/tests.
-- [ ] **V01A-08** Implementar layout raiz, página inicial, metadados e 404.
-- [ ] **V01A-09** Implementar rotas /cartas, /cartas/[slug], /baralhos e /creditos.
+- [x] **V01A-07** Criar estrutura modular app/components/features/domain/data/lib/tests.
+- [x] **V01A-08** Implementar layout raiz, página inicial, metadados e 404.
+- [x] **V01A-09** Implementar rotas /cartas, /cartas/[slug], /baralhos e /creditos.
 - [ ] **V01A-10** Validar dev/build/lint/typecheck/testes no ambiente Windows.
 
 ## V0.1-B — Modelo de dados e catálogo
 
-- [ ] **V01B-01** Definir tipos Card, Deck, CardArtwork e IDs independentes de framework.
-- [ ] **V01B-02** Gerar catálogo com 78 cartas, nomes PT-BR e originais em inglês.
-- [ ] **V01B-03** Validar 22 Maiores, incluindo VIII Força e XI Justiça.
-- [ ] **V01B-04** Validar 56 Menores e corte 11 Pajem/12 Cavaleiro/13 Rainha/14 Rei.
-- [ ] **V01B-05** Mapear os 78 filenames do acervo, incluindo Pents para Ouros.
-- [ ] **V01B-06** Criar testes de unicidade, contagens, taxonomia e identificação.
-- [ ] **V01B-07** Modelar RWS publicado e brasileiro em produção, com estados separados.
+- [x] **V01B-01** Definir tipos Card, Deck, CardArtwork e IDs independentes de framework.
+- [x] **V01B-02** Gerar catálogo com 78 cartas, nomes PT-BR e originais em inglês.
+- [x] **V01B-03** Validar 22 Maiores, incluindo VIII Força e XI Justiça.
+- [x] **V01B-04** Validar 56 Menores e corte 11 Pajem/12 Cavaleiro/13 Rainha/14 Rei.
+- [x] **V01B-05** Mapear os 78 filenames do acervo, incluindo Pents para Ouros.
+- [x] **V01B-06** Criar testes de unicidade, contagens, taxonomia e identificação.
+- [x] **V01B-07** Modelar RWS publicado e brasileiro em produção, com estados separados.
 - [ ] **V01B-08** Criar interfaces de repositório de cartas e resolução de artwork.
-- [ ] **V01B-09** Gerar links e metadados únicos para cada carta.
+- [x] **V01B-09** Gerar links e metadados únicos para cada carta.
 
 ## V0.1-C — Imagens e manifesto de publicação
 
@@ -108,7 +108,7 @@
 
 ## V0.1-D — Interface da biblioteca
 
-- [ ] **V01D-01** Definir Design System Heritage Editorial e tipografia legível.
+- [x] **V01D-01** Definir Design System Heritage Editorial e tipografia legível.
 - [ ] **V01D-02** Criar AppShell, cabeçalho e navegação responsiva desktop/mobile.
 - [ ] **V01D-03** Criar CardGrid e CardTile 3:5.
 - [ ] **V01D-04** Adicionar filtros por Maiores/Menores e por naipe.
@@ -118,19 +118,19 @@
 - [ ] **V01D-08** Criar visualizador com zoom, teclado, Escape e gestos mobile.
 - [ ] **V01D-09** Criar navegação anterior/próxima carta.
 - [ ] **V01D-10** Criar seletor de decks, sem publicar artes brasileiras incompletas.
-- [ ] **V01D-11** Publicar página de créditos e contexto interpretativo do tarot.
+- [x] **V01D-11** Publicar página de créditos e contexto interpretativo do tarot.
 - [ ] **V01D-12** Validar interfaces mobile/tablet/desktop e reduced-motion.
 
 ## V0.1-E — Qualidade e publicação MVP
 
-- [ ] **V01E-01** Cobrir invariantes canônicos por testes unitários.
+- [x] **V01E-01** Cobrir invariantes canônicos por testes unitários.
 - [ ] **V01E-02** Testar componentes, filtros, busca, erros e loading.
 - [ ] **V01E-03** Rodar E2E: catálogo → filtro Espadas → Oito de Espadas → zoom.
 - [ ] **V01E-04** Auditar teclado, foco, contraste, textos alternativos e zoom.
 - [ ] **V01E-05** Medir performance mobile e impedir carregamento massivo dos masters.
 - [ ] **V01E-06** Configurar CI GitHub Actions para lint, types, tests, build e assets.
 - [ ] **V01E-07** Publicar preview acessível com imagens disponíveis no servidor.
-- [ ] **V01E-08** Atualizar instruções Windows e troubleshooting no README.
+- [x] **V01E-08** Atualizar instruções Windows e troubleshooting no README.
 - [ ] **V01E-09** Auditar 78 URLs, imagens, responsividade e créditos.
 - [ ] **V01E-10** GATE V0.1: aceitar biblioteca com build, testes, preview e evidências.
 
@@ -262,4 +262,4 @@
 - [ ] README/arquitetura/roadmap atualizados, se impactados.
 - [ ] Usuário informado sobre entregue, ainda pendente e próximo marco.
 
-**Próxima etapa sugerida:** GOV-05 (revisão/aceite do planejamento), depois V01A-01 até V01A-10 (fundação Next.js). O app não existe ainda.
+**Próximo foco:** concluir a fundação V0.1 com package-lock, tooling de testes de interface e verificação no Windows; depois pipeline de miniaturas e revisão visual. O app Next.js já está codificado e compilado em CI, mas sem preview com imagens.
